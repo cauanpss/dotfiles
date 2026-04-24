@@ -1,0 +1,40 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+
+  "clock": {
+    "format": "{:%H:%M - %d/%m}"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " cabo",
+    "format-disconnected": "⚠ sem rede"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " mutado"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {percentage}%"
+  }
+}
